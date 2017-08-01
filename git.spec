@@ -38,7 +38,6 @@ make all man
 
 %install
 make install install-man DESTDIR=%{buildroot}
-ls -lR %{buildroot}
 
 %files
 %defattr(-,root,root)
