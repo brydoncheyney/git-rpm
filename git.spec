@@ -4,11 +4,11 @@
 
 Name: git
 Summary: Git core and tools
-Version: 2.11.1
+Version: 2.14.1
 Release: 1
 License: GPL
 Group: Development/Tools
-Source: https://github.com/git/git/archive/v2.11.1.tar.gz
+Source: https://github.com/git/git/archive/v2.14.1.tar.gz
 URL: http://git-scm.com/
 Distribution: RHEL6
 Vendor: Red Hat
