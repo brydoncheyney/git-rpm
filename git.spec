@@ -4,7 +4,7 @@
 
 Name: git
 Summary: Git core and tools
-Version: 2.14.2
+Version: 2.14.2{?dist}
 Release: 1
 License: GPL
 Group: Development/Tools
