@@ -1,8 +1,6 @@
 FROM centos:7
 RUN yum -y install epel-release
 RUN yum -y install rpm-build rpmdevtools redhat-rpm-config rpmlint yum-utils
-RUN yum -y mark install "Development Tools"
-RUN yum -y mark convert "Development Tools"
 RUN yum -y groupinstall "Development Tools" --exclude=subversion
 RUN yum -y install openssl-devel curl-devel expat-devel perl-ExtUtils-MakeMaker
 RUN yum -y install asciidoc xmlto
