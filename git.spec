@@ -4,8 +4,8 @@
 
 Name: git
 Summary: Git core and tools
-Version: 2.14.2%{?dist}
-Release: 1
+Version: 2.14.2
+Release: 1%{?dist}
 License: GPL
 Group: Development/Tools
 Source: https://github.com/git/git/archive/v2.14.2.tar.gz
