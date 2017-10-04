@@ -2,6 +2,11 @@
 %global _enable_debug_package 0
 %global debug_package %{nil}
 
+# CentOS 7 would force ".el7.centos", we want to avoid that.
+%if 0%{?rhel} == 7
+  %define dist .el7
+%endif
+
 Name: git
 Summary: Git core and tools
 Version: 2.14.2
