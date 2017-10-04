@@ -8,6 +8,6 @@ Builds a Git RPM from [source tarball](https://github.com/tomduckering/rpm_from_
 
 ## Usage
 
-    ./build
+    ./build git.spec
 
 This will produce the artifact in `./RPMS/x86_64/`
