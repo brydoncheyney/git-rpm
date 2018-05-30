@@ -9,11 +9,11 @@
 
 Name: git
 Summary: Git core and tools
-Version: 2.14.2
+Version: 2.17.1
 Release: 1%{?dist}
 License: GPL
 Group: Development/Tools
-Source: https://github.com/git/git/archive/v2.14.2.tar.gz
+Source: https://github.com/git/git/archive/v2.17.1.tar.gz
 URL: http://git-scm.com/
 Distribution: RHEL6
 Vendor: Red Hat
@@ -43,7 +43,20 @@ make all man
 
 %install
 make install install-man DESTDIR=%{buildroot}
+%{__rm} -rf %{buildroot}%{_datadir}/locale/*
 
 %files
 %defattr(-,root,root)
-/usr/*
+%doc %{_mandir}/man1/*.1*
+%doc %{_mandir}/man3/*.3*
+%doc %{_mandir}/man5/*.5*
+%doc %{_mandir}/man7/*.7*
+%{_bindir}/git*
+%{_libexecdir}/git-core/
+%{_datadir}/git-core/
+%{_datadir}/git-gui/
+%{_datadir}/gitk/
+%{_datadir}/gitweb
+%{_datadir}/perl5/FromCPAN
+%{_datadir}/perl5/Git.pm
+%{_datadir}/perl5/Git
