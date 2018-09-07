@@ -7,13 +7,15 @@
   %define dist .el7
 %endif
 
+%define version 2.18.0
+
 Name: git
 Summary: Git core and tools
-Version: 2.17.1
+Version: %{version}
 Release: 1%{?dist}
 License: GPL
 Group: Development/Tools
-Source: https://github.com/git/git/archive/v2.17.1.tar.gz
+Source: https://github.com/git/git/archive/v%{version}.tar.gz
 URL: http://git-scm.com/
 Distribution: RHEL6
 Vendor: Red Hat
